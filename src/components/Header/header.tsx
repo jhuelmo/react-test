@@ -1,6 +1,8 @@
 import { InfoBar } from "./InfoBar/infobar";
 import { Navigation } from "./Navigation/navigation";
 
+import "./header.css";
+
 export function Header() {
     //TODO: Responsive header
     //TODO: Improve title
