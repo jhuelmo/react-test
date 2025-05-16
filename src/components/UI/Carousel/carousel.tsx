@@ -19,7 +19,12 @@ export default function Carousel() {
             <ul className="carousel-slides">
                 {slides.map((slide, index) => (
                     <li key={slide.id} className="carousel-slide">
-                        <img src={slide.content} className="carousel-image" />
+                        <div className="carousel-image-container">
+                            <img
+                                src={slide.content}
+                                className="carousel-image"
+                            />
+                        </div>
                     </li>
                 ))}
             </ul>
