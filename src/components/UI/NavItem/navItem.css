@@ -1,0 +1,26 @@
+.nav-item {
+    font-weight: 500;
+    position: relative;
+}
+
+.nav-link {
+    display: block;
+    font-size: 1rem;
+    letter-spacing: -0.8px;
+    cursor: pointer;
+    padding: 10px;
+}
+
+.nav-link:hover,
+.nav-link.active {
+    color: rgb(85, 204, 219);
+}
+
+.nav-icon {
+    color: rgb(85, 204, 219);
+    fill: currentColor;
+    position: absolute;
+    top: -24px;
+    left: 50%;
+    transform: translateX(-50%);
+}
