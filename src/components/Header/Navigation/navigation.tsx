@@ -2,27 +2,27 @@ import { useState } from "react";
 import { NavItem } from "../../UI/NavItem/navItem";
 import "./navigation.css";
 
+//Temp list for demo purpose
+const menuItems = [
+    { id: "participa", label: "PARTICIPA" },
+    { id: "eurostar", label: "EUROSTAR HOTELS" },
+    { id: "ganadores", label: "LOS GANADORES" },
+];
+
 export function Navigation() {
-    const [activeLabel, setActiveLabel] = useState("");
+    const [activeId, setActiveId] = useState("");
 
     return (
         <nav>
             <ul>
-                <NavItem
-                    label="PARTICIPA"
-                    isActive={activeLabel === "PARTICIPA"}
-                    onClick={() => setActiveLabel("PARTICIPA")}
-                />
-                <NavItem
-                    label="EUROSTAR HOTELS"
-                    isActive={activeLabel === "EUROSTAR HOTELS"}
-                    onClick={() => setActiveLabel("EUROSTAR HOTELS")}
-                />
-                <NavItem
-                    label="LOS GANADORES"
-                    isActive={activeLabel === "LOS GANADORES"}
-                    onClick={() => setActiveLabel("LOS GANADORES")}
-                />
+                {menuItems.map(({ id, label }) => (
+                    <NavItem
+                        key={id}
+                        label={label}
+                        isActive={activeId === id}
+                        onClick={() => setActiveId(id)}
+                    />
+                ))}
             </ul>
         </nav>
     );
