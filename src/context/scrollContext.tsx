@@ -21,7 +21,7 @@ export const ScrollProvider = ({ children }: { children: ReactNode }) => {
     const section3Ref = useRef<HTMLElement>(null);
 
     const scrollTo = (ref: RefObject<HTMLElement | null>) => {
-        ref.current?.scrollIntoView();
+        ref.current?.scrollIntoView({ behavior: "smooth" });
     };
 
     return (

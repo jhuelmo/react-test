@@ -1,12 +1,16 @@
+import { useScroll } from "@/context/scrollContext";
 import HeroSection from "./HeroSection/heroSection";
 import "./main.css";
+import Section from "./Section/section";
 
 export function Main() {
+    const { section1Ref, section2Ref } = useScroll();
+
     return (
         <main className="main-container">
             <HeroSection />
-            <section>Section2</section>
-            <section>Section3</section>
+            <Section ref={section1Ref} id="map" />
+            <Section ref={section2Ref} id="winners" />
         </main>
     );
 }

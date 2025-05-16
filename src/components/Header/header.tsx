@@ -6,6 +6,7 @@ import "./header.css";
 export function Header() {
     //TODO: Responsive header
     //TODO: Improve title
+
     return (
         <header className="header">
             <InfoBar />
