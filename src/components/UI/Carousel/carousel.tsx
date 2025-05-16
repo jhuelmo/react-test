@@ -1,4 +1,4 @@
-import { useEffect, useState } from "react";
+import { useCallback, useState } from "react";
 import angli from "@/assets/slider/angli.jpg";
 import room from "@/assets/slider/room.jpg";
 import tower from "@/assets/slider/tower.jpg";
@@ -11,12 +11,21 @@ const slides = [
     { id: 3, content: tower },
 ];
 
+//TODO: Add automatic slider rotation & tablet controls
+
 export default function Carousel() {
     const [currentIndex, setCurrentIndex] = useState(0);
 
+    const goToSlide = useCallback((index: number) => {
+        setCurrentIndex(index);
+    }, []);
+
     return (
         <div className="carousel" aria-label="Image carousel">
-            <ul className="carousel-slides">
+            <ul
+                className="carousel-slides"
+                style={{ transform: `translateX(-${currentIndex * 100}%)` }}
+            >
                 {slides.map((slide, index) => (
                     <li key={slide.id} className="carousel-slide">
                         <div className="carousel-image-container">
@@ -37,6 +46,7 @@ export default function Carousel() {
                         className={`carousel-indicator ${
                             index === currentIndex ? "active" : ""
                         }`}
+                        onClick={() => goToSlide(index)}
                         aria-label={`Go to slide ${index + 1}`}
                         aria-current={index === currentIndex ? "true" : "false"}
                     />
