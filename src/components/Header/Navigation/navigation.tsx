@@ -9,6 +9,7 @@ const menuItems = [
     { id: "ganadores", label: "LOS GANADORES" },
 ];
 
+//TODO: add href to items and scroll to section
 export function Navigation() {
     const [activeId, setActiveId] = useState("");
 

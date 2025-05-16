@@ -1,11 +1,14 @@
 import type { AnchorHTMLAttributes } from "react";
-import "./navItem.css";
 import Location from "@/components/UI/Icons/location";
+
+import "./navItem.css";
 
 interface NavItemProps extends AnchorHTMLAttributes<HTMLAnchorElement> {
     label: string;
     isActive: boolean;
 }
+
+//TODO: Add animation ??
 
 function NavItem({ label, isActive, onClick }: NavItemProps) {
     const className = `nav-link${isActive ? " active" : ""}`;
