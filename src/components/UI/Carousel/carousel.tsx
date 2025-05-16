@@ -12,6 +12,7 @@ const slides = [
 ];
 
 //TODO: Add automatic slider rotation & tablet controls
+//TODO: Responsive
 
 export default function Carousel() {
     const [currentIndex, setCurrentIndex] = useState(0);
