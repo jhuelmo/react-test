@@ -28,6 +28,17 @@ export default function Carousel() {
                     </li>
                 ))}
             </ul>
+
+            {/* Carousel indicators */}
+            <div className="carousel-indicator-contrainer">
+                {slides.map((_, index) => (
+                    <button
+                        key={index}
+                        aria-label={`Go to slide ${index + 1}`}
+                        aria-current={index === currentIndex ? "true" : "false"}
+                    />
+                ))}
+            </div>
         </div>
     );
 }
