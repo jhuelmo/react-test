@@ -1,5 +1,5 @@
-import { useState } from "react";
 import reactLogo from "@/assets/logo.png";
+import "./infobar.css";
 
 export function InfoBar() {
     return (
