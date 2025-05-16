@@ -34,6 +34,9 @@ export default function Carousel() {
                 {slides.map((_, index) => (
                     <button
                         key={index}
+                        className={`carousel-indicator ${
+                            index === currentIndex ? "active" : ""
+                        }`}
                         aria-label={`Go to slide ${index + 1}`}
                         aria-current={index === currentIndex ? "true" : "false"}
                     />
