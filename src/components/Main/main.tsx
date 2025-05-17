@@ -4,6 +4,8 @@ import MapSection from "./MapSection/mapSection";
 import "./main.css";
 import WinnersSection from "./WinnersSection/winnersSection";
 
+// Could be renamed
+
 //TODO: Create googleMap component
 //TODO: Create map
 export function Main() {
