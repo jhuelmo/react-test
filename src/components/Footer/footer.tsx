@@ -3,6 +3,8 @@ import Logo from "../UI/Logo/logo";
 import SocialMedia from "../UI/SocialMedia/socialMedia";
 import "./footer.css";
 
+// belongs to higher folder - la idea de los componentes es que no haya xerarquía. O tema é que en outra carpeta dentro de components tes xerarquía 
+
 export default function Footer() {
     //TODO: Add clickable to social media
     return (
