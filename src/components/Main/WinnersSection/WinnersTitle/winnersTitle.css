@@ -1,0 +1,24 @@
+.winners-card-title {
+    display: flex;
+    align-items: center;
+    gap: 0.5rem;
+    h3 {
+        font-family: "Orbon ITC", sans-serif;
+        font-weight: 400;
+        font-size: 3rem;
+    }
+}
+.winners-card-title-separator {
+    width: 2px;
+    min-height: 3rem;
+    background-color: var(--contrast-color);
+    margin: 0 0.5rem;
+}
+
+.winners-card-date {
+    display: flex;
+    flex-direction: column;
+    span {
+        line-height: 1rem;
+    }
+}

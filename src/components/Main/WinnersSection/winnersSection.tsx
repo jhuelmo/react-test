@@ -8,6 +8,8 @@ import statue from "@/assets/images/statue.jpg";
 import suite from "@/assets/images/suite.jpg";
 
 import data from "@/data/winners-data.json";
+import Diamond from "@/components/UI/Diamond/diamond";
+import WinnersTitle from "./WinnersTitle/winnersTitle";
 
 export default function WinnersSection() {
     const { section3Ref } = useScroll();
@@ -21,16 +23,19 @@ export default function WinnersSection() {
     return (
         <Section ref={section3Ref}>
             <div className="winners-wrapper">
-                <h3 className="winners-title">
+                <h2 className="winners-title">
                     LOS GANADORES DE LAS ESTANCIAS EN HOTELES EUROSTARS
-                </h3>
+                </h2>
                 <div className="winners-card-container">
                     {data.cards.map((card) => (
-                        <Card
-                            winners={card.winners}
-                            firstImage={getImage(card.firstImage)}
-                            secondImage={getImage(card.secondImage)}
-                        />
+                        <>
+                            <WinnersTitle />
+                            <Card
+                                winners={card.winners}
+                                firstImage={getImage(card.firstImage)}
+                                secondImage={getImage(card.secondImage)}
+                            />
+                        </>
                     ))}
                 </div>
             </div>
