@@ -52,7 +52,7 @@ export default function Map() {
         )) as google.maps.MarkerLibrary;
 
         map = new Map(mapRef.current, {
-            zoom: 2.5,
+            zoom: 3,
             scrollwheel: false,
             center: position,
             mapId: "Test-React-Map",
