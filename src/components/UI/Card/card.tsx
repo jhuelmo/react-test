@@ -5,7 +5,7 @@ interface CardProps {
     secondImage: string;
     winners: string[];
 }
-
+//TODO: Load hotel name dinamically?
 export default function Card({ firstImage, secondImage, winners }: CardProps) {
     return (
         <div className="card-wrapper">

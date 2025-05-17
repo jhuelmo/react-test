@@ -18,10 +18,12 @@
     text-align: center;
     padding: 1rem 0;
     font-weight: 400;
+    font-size: 1.4rem;
 }
 .winners-card-container {
     padding: 0 10%;
     display: flex;
     align-items: center;
     flex-direction: column;
+    gap: 1rem;
 }
