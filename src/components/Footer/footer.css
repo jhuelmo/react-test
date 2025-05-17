@@ -1,4 +1,17 @@
-.footer-wrapper {
+.footer {
+    height: 8rem;
     background-color: #ffffff;
     border-top: 1px solid #dddddd;
+}
+.footer-wrapper {
+    padding: 1rem;
+    height: 40%;
+    display: flex;
+    gap: 3rem;
+    justify-content: center;
+}
+.social-media-wrapper {
+    display: flex;
+    align-items: center;
+    gap: 1rem;
 }

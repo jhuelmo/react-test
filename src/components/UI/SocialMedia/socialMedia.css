@@ -1,0 +1,32 @@
+.social {
+    border-radius: 100%;
+    padding: 0.5rem;
+}
+
+.social-facebook {
+    background-color: #1877f2;
+}
+
+.social-twitter {
+    background-color: #1da1f2;
+}
+
+.social-youtube {
+    background-color: #ff0000;
+}
+
+.social-instagram {
+    background-color: #e1306c;
+}
+
+.social-pinterest {
+    background-color: #bd081c;
+}
+
+.social-icon {
+    color: white;
+    svg {
+        width: 100%;
+        height: 100%;
+    }
+}
