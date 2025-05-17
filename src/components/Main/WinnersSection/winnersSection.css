@@ -1,6 +1,12 @@
 .winners-wrapper {
     box-shadow: 0 -6px 8px -1px rgba(0, 0, 0, 0.486);
     z-index: 99;
+    background-image: url("/src/assets/diamond-bg.png");
+    background-size: 12rem;
+    background-repeat: repeat;
+    background-color: rgba(255, 255, 255, 0.2);
+    background-blend-mode: lighten;
+    flex-grow: 1;
 }
 .winners-title {
     background-color: var(--accent-color);
