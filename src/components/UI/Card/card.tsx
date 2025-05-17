@@ -1,21 +1,21 @@
 import "./card.css";
 
 interface CardProps {
-    image1: string;
-    image2: string;
+    firstImage: string;
+    secondImage: string;
     winners: string[];
 }
 
-export default function Card({ image1, image2, winners }: CardProps) {
+export default function Card({ firstImage, secondImage, winners }: CardProps) {
     return (
         <div className="card-wrapper">
             <div className="card-container">
                 <div className="card-image-container">
                     <div className="card-image-wrapper">
-                        <img className="card-image" src={image1} />
+                        <img className="card-image" src={firstImage} />
                     </div>
                     <div className="card-image-wrapper">
-                        <img className="card-image" src={image2} />
+                        <img className="card-image" src={secondImage} />
                     </div>
                 </div>
 

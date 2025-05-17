@@ -2,6 +2,7 @@ import { useEffect, useRef } from "react";
 import { createRoot } from "react-dom/client";
 import Location from "../Icons/location";
 
+//TODO: Add props
 export default function Map() {
     const mapRef = useRef<HTMLDivElement>(null);
     let map;

@@ -8,8 +8,8 @@
                 "Laura Coronas",
                 "Alexandra Tresaco"
             ],
-            "image1": "suite.jpg",
-            "image2": "roma.jpg"
+            "firstImage": "suite.jpg",
+            "secondImage": "roma.jpg"
         },
         {
             "winners": [
@@ -19,8 +19,8 @@
                 "Laura Coronas",
                 "Alexandra Tresaco"
             ],
-            "image1": "suite.jpg",
-            "image2": "statue.jpg"
+            "firstImage": "suite.jpg",
+            "secondImage": "statue.jpg"
         }
     ]
 }

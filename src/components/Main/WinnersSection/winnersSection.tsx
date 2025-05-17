@@ -25,18 +25,18 @@ export default function WinnersSection() {
                     LOS GANADORES DE LAS ESTANCIAS EN HOTELES EUROSTARS
                 </h3>
                 <div className="winners-card-container">
-                    {data.cards.map((card, index) => (
+                    {data.cards.map((card) => (
                         <Card
                             winners={card.winners}
-                            image1={getImage(card.image1)}
-                            image2={getImage(card.image2)}
+                            firstImage={getImage(card.firstImage)}
+                            secondImage={getImage(card.secondImage)}
                         />
                     ))}
                 </div>
             </div>
         </Section>
     );
-
+    //TODO: Typing error
     function getImage(key: string): string {
         return images[key as keyof typeof images] || "";
     }
