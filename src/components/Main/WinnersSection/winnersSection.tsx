@@ -14,6 +14,11 @@ export default function WinnersSection() {
                 <div className="winners-card-container">
                     <Card />
                     <Card />
+                    <Card />
+                    <Card />
+                    <Card />
+                    <Card />
+                    <Card />
                 </div>
             </div>
         </Section>

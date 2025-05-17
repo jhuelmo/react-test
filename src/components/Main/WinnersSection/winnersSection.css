@@ -20,7 +20,7 @@
     font-weight: 400;
 }
 .winners-card-container {
-    width: 40vw;
+    padding: 0 10%;
     display: flex;
     align-items: center;
     flex-direction: column;
