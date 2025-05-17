@@ -21,6 +21,7 @@ export default function WinnersSection() {
     return (
         <Section ref={section3Ref}>
             <div className="winners-wrapper">
+// h3 es semántica, mirar esto
                 <h3 className="winners-title">
                     LOS GANADORES DE LAS ESTANCIAS EN HOTELES EUROSTARS
                 </h3>
