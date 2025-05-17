@@ -1,4 +1,11 @@
-.winners-card-title {
+.winners-post {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    margin-top: 2rem;
+}
+
+.winners-post-title {
     display: flex;
     align-items: center;
     gap: 0.5rem;
@@ -8,7 +15,7 @@
         font-size: 3rem;
     }
 }
-.winners-card-title-separator {
+.winners-post-title-separator {
     width: 2px;
     min-height: 3rem;
     background-color: var(--contrast-color);
