@@ -1,3 +1,10 @@
+@font-face {
+    font-family: "Orbon ITC";
+    src: url("./assets/fonts/Orbon.otf") format("truetype");
+    font-weight: normal;
+    font-style: normal;
+}
+
 * {
     margin: 0;
     padding: 0;
