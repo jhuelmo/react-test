@@ -1,18 +1,21 @@
 import "./card.css";
-import roma from "@/assets/images/roma.jpg";
-import statue from "@/assets/images/statue.jpg";
-import suite from "@/assets/images/suite.jpg";
 
-export default function Card() {
+interface CardProps {
+    image1: string;
+    image2: string;
+    winners: string[];
+}
+
+export default function Card({ image1, image2, winners }: CardProps) {
     return (
         <div className="card-wrapper">
             <div className="card-container">
                 <div className="card-image-container">
                     <div className="card-image-wrapper">
-                        <img className="card-image" src={roma} />
+                        <img className="card-image" src={image1} />
                     </div>
                     <div className="card-image-wrapper">
-                        <img className="card-image" src={statue} />
+                        <img className="card-image" src={image2} />
                     </div>
                 </div>
 
@@ -21,14 +24,13 @@ export default function Card() {
                     <span className="card-info-description">
                         <p>Habéis ganado una estancia para</p>
                         <p>
-                            <u>Eurostars International Place 4</u>
+                            <u>Eurostars International Place 4*</u>
                         </p>
                     </span>
                     <ul className="card-info-list">
-                        <li>Nombre</li>
-                        <li>Nombre</li>
-                        <li>Nombre</li>
-                        <li>Nombre</li>
+                        {winners.map((item, index) => (
+                            <li key={index}>{item}</li>
+                        ))}
                     </ul>
                 </div>
             </div>
