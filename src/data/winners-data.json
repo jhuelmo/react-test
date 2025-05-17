@@ -1,5 +1,5 @@
 {
-    "cards": [
+    "posts": [
         {
             "winners": [
                 "Benito de los Palotes Pardos",
@@ -8,8 +8,8 @@
                 "Laura Coronas",
                 "Alexandra Tresaco"
             ],
-            "firstImage": "suite.jpg",
-            "secondImage": "roma.jpg"
+            "firstImage": "/assets/suite.jpg",
+            "secondImage": "/assets/roma.jpg"
         },
         {
             "winners": [
@@ -19,8 +19,8 @@
                 "Laura Coronas",
                 "Alexandra Tresaco"
             ],
-            "firstImage": "suite.jpg",
-            "secondImage": "statue.jpg"
+            "firstImage": "/assets/suite.jpg",
+            "secondImage": "/assets/statue.jpg"
         }
     ]
 }
