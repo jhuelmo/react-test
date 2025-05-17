@@ -14,6 +14,8 @@ type ScrollContextType = {
     headerRef: RefObject<HTMLElement | null>;
 };
 
+// usar contexto para guardar referencias - smells
+
 const ScrollContext = createContext<ScrollContextType | undefined>(undefined);
 
 export const ScrollProvider = ({ children }: { children: ReactNode }) => {
@@ -55,3 +57,8 @@ export const useScroll = (): ScrollContextType => {
     }
     return context;
 };
+
+
+// this could probably be a bad practice, let's think through that in an issue
+
+// on another thought it would be interesting to showcase context knowledge
