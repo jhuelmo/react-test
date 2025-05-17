@@ -1,14 +1,11 @@
-import "./heroSection.css";
+import Section from "@/components/UI/Section/section";
 
 import Carousel from "@/components/UI/Carousel/carousel";
 
 export default function HeroSection() {
     return (
-        <section
-            className="hero-wrapper"
-            aria-label="Eurostars hotels room images carousel"
-        >
+        <Section aria-label="Eurostars hotels room images carousel">
             <Carousel></Carousel>
-        </section>
+        </Section>
     );
 }

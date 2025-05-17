@@ -6,3 +6,8 @@
 ul li {
     list-style: none;
 }
+
+:root {
+    --accent-color: #38bbd7;
+    --contrast-color: #fbba04;
+}

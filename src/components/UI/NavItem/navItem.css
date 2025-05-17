@@ -13,11 +13,11 @@
 
 .nav-link:hover,
 .nav-link.active {
-    color: rgb(85, 204, 219);
+    color: var(--accent-color);
 }
 
 .nav-icon {
-    color: rgb(85, 204, 219);
+    color: var(--accent-color);
     fill: currentColor;
     position: absolute;
     top: -24px;

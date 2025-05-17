@@ -1,0 +1,9 @@
+.diamond {
+    border: none;
+    transition: background-color 0.3s;
+    transform: rotate(45deg);
+}
+
+.diamond.active {
+    background-color: var(--accent-color) !important;
+}

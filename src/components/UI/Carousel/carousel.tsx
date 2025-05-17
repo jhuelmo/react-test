@@ -3,6 +3,7 @@ import angli from "@/assets/slider/angli.jpg";
 import room from "@/assets/slider/room.jpg";
 import tower from "@/assets/slider/tower.jpg";
 import "./carousel.css";
+import Diamond from "../Diamond/diamond";
 
 //List for demo purpose
 const slides = [
@@ -38,19 +39,25 @@ export default function Carousel() {
                     </li>
                 ))}
             </ul>
-
+            {/* width: 0.5rem;
+    height: 0.5rem;
+    background-color: rgba(39, 38, 38, 0.678); */}
             {/* Carousel indicators */}
             <div className="carousel-indicator-contrainer">
                 {slides.map((_, index) => (
                     <button
                         key={index}
-                        className={`carousel-indicator ${
-                            index === currentIndex ? "active" : ""
-                        }`}
+                        className={`carousel-indicator`}
                         onClick={() => goToSlide(index)}
                         aria-label={`Go to slide ${index + 1}`}
                         aria-current={index === currentIndex ? "true" : "false"}
-                    />
+                    >
+                        <Diamond
+                            className={`${
+                                index === currentIndex ? "active" : ""
+                            }`}
+                        ></Diamond>
+                    </button>
                 ))}
             </div>
         </div>

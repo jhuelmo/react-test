@@ -1,6 +1,8 @@
 import "./App.css";
 import Header from "@/components/Header/header";
 import Main from "@/components/Main/main";
+import Footer from "@/components/Footer/footer";
+
 import AppProviders from "@/context/appProviders";
 
 function App() {
@@ -9,6 +11,7 @@ function App() {
             <AppProviders>
                 <Header />
                 <Main />
+                <Footer />
             </AppProviders>
         </>
     );

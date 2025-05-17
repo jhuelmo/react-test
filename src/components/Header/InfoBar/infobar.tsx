@@ -1,4 +1,4 @@
-import reactLogo from "@/assets/logo.png";
+import Logo from "@/components/UI/Logo/logo";
 import "./infobar.css";
 
 export function InfoBar() {
@@ -6,9 +6,7 @@ export function InfoBar() {
         <div className="info-bar-wrapper">
             <div className="info-bar">
                 <div className="right-container">
-                    <a className="logo">
-                        <img src={reactLogo} />
-                    </a>
+                    <Logo />
                 </div>
             </div>
         </div>

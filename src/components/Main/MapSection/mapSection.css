@@ -1,0 +1,21 @@
+.map-section-container {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    padding: 0 17vw;
+    margin-top: 1rem;
+    margin-bottom: 2rem;
+    text-align: center;
+
+    h3,
+    b {
+        font-weight: 500;
+    }
+}
+
+.map-section-separator {
+    margin: 10px;
+    display: flex;
+    gap: 10px;
+    align-items: center;
+}
