@@ -32,7 +32,6 @@ export default function WinnersSection() {
                             image2={getImage(card.image2)}
                         />
                     ))}
-                    ;
                 </div>
             </div>
         </Section>
