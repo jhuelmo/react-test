@@ -1,0 +1,26 @@
+{
+    "cards": [
+        {
+            "winners": [
+                "Benito de los Palotes Pardos",
+                "María de la O",
+                "Carme Gener",
+                "Laura Coronas",
+                "Alexandra Tresaco"
+            ],
+            "image1": "suite.jpg",
+            "iamge2": "roma.jpg"
+        },
+        {
+            "winners": [
+                "Benito de los Palotes Pardos",
+                "María de la O",
+                "Carme Gener",
+                "Laura Coronas",
+                "Alexandra Tresaco"
+            ],
+            "image1": "suite.jpg",
+            "iamge2": "statue.jpg"
+        }
+    ]
+}
