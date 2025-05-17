@@ -4,6 +4,7 @@ import SocialMedia from "../UI/SocialMedia/socialMedia";
 import "./footer.css";
 
 export default function Footer() {
+    //TODO: Add clickable to social media
     return (
         <footer className="footer">
             <div className="footer-wrapper">
