@@ -5,9 +5,9 @@ import Diamond from "@/components/UI/Diamond/diamond";
 import { useScroll } from "@/context/scrollContext";
 
 export default function MapSection() {
-    const { section1Ref } = useScroll();
+    const { section2Ref } = useScroll();
     return (
-        <Section ref={section1Ref}>
+        <Section ref={section2Ref}>
             <div className="map-section-container">
                 <h3>
                     Eurostars Hotels es una cadena de hoteles con alma española
