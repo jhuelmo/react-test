@@ -1,6 +1,11 @@
 {
     "posts": [
         {
+            "title": "Roma",
+            "date": {
+                "startDate": "28 abril",
+                "endDate": "4 mayo"
+            },
             "winners": [
                 "Benito de los Palotes Pardos",
                 "María de la O",
@@ -12,6 +17,7 @@
             "secondImage": "/assets/roma.jpg"
         },
         {
+            "title": "Roma",
             "winners": [
                 "Benito de los Palotes Pardos",
                 "María de la O",
