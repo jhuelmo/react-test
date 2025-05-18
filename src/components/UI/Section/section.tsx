@@ -8,7 +8,7 @@ interface SectionProps extends HTMLAttributes<HTMLElement> {
 
 export default function Section({ id, ref, children }: SectionProps) {
     return (
-        <section ref={ref} className="section-wrapper">
+        <section id={id} ref={ref} className="section-wrapper">
             {children}
         </section>
     );

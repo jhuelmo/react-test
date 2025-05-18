@@ -22,7 +22,11 @@ export function Navigation() {
         ganadores: section3Ref,
     };
 
-    const handleClick = (id: string) => {
+    const handleClick = (
+        id: string,
+        e: React.MouseEvent<HTMLAnchorElement>
+    ) => {
+        e.preventDefault();
         setActiveId(id);
         const ref = refMap[id];
         if (ref) {
@@ -39,7 +43,7 @@ export function Navigation() {
                         label={label}
                         href={`#${id}`}
                         isActive={activeId === id}
-                        onClick={() => handleClick(id)}
+                        onClick={(e) => handleClick(id, e)}
                     />
                 ))}
             </ul>

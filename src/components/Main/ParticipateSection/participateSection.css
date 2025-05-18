@@ -1,0 +1,42 @@
+.participate-wrapper {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    height: 100vh;
+}
+.participate-main-container {
+    display: flex;
+    align-items: center;
+    flex-direction: column;
+    width: 100%;
+    background-image: url("/assets/participate-bg.jpg");
+    background-size: cover;
+    background-repeat: no-repeat;
+}
+
+.participate-title-container {
+    display: flex;
+    flex-direction: column;
+    margin-top: 1.5rem;
+    align-items: center;
+    color: white;
+
+    text-shadow: 2px 0 black;
+    h4 {
+        font-size: 1.5rem;
+    }
+}
+
+.participate-title {
+    font-family: "Orbon ITC", sans-serif;
+    font-size: 5rem;
+    display: flex;
+    flex-direction: row;
+    align-items: center;
+    gap: 0.5rem;
+    height: auto;
+    line-height: 0.8;
+}
+
+.participate-bot-container {
+}

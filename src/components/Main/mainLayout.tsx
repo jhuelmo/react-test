@@ -1,5 +1,6 @@
 import Carousel from "../UI/Carousel/carousel";
 import MapSection from "./MapSection/mapSection";
+import ParticipateSection from "./ParticipateSection/participateSection";
 import WinnersSection from "./WinnersSection/winnersSection";
 
 import "./mainLayout.css";
@@ -10,6 +11,7 @@ export function MainLayout() {
             <Carousel />
             <MapSection />
             <WinnersSection />
+            <ParticipateSection />
         </main>
     );
 }
