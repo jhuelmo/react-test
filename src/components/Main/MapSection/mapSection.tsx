@@ -1,8 +1,8 @@
-import Map from "@/components/UI/Map/map";
 import Section from "@/components/UI/Section/section";
 import "./mapSection.css";
 import Diamond from "@/components/UI/Diamond/diamond";
 import { useScroll } from "@/context/scrollContext";
+import MapLoader from "@/components/UI/Map/mapLoader";
 
 export default function MapSection() {
     const { section2Ref } = useScroll();
@@ -32,7 +32,7 @@ export default function MapSection() {
                     el servicio y la cercanía
                 </p>
             </div>
-            <Map />
+            <MapLoader />
         </Section>
     );
 }

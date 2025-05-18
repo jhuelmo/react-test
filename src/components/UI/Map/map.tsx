@@ -2,6 +2,8 @@ import { useEffect, useRef } from "react";
 import { createRoot } from "react-dom/client";
 import Location from "../Icons/location";
 
+import { defaultPosition, mapOptions, mapStyles } from "./mapConfig";
+
 //TODO: Add props
 export default function Map() {
     const mapRef = useRef<HTMLDivElement>(null);
@@ -44,7 +46,6 @@ export default function Map() {
             { name: "Styled Map" }
         );
 
-        const position = { lat: 40.405262482261776, lng: -3.69021956301151381 };
         const { Map } = (await google.maps.importLibrary(
             "maps"
         )) as google.maps.MapsLibrary;
@@ -58,7 +59,7 @@ export default function Map() {
             disableDoubleClickZoom: true,
             mapTypeControl: false,
 
-            center: position,
+            center: defaultPosition,
             mapId: "Test-React-Map",
             mapTypeControlOptions: {
                 mapTypeIds: [
@@ -80,7 +81,7 @@ export default function Map() {
 
         const marker = new AdvancedMarkerElement({
             map: map,
-            position: position,
+            position: defaultPosition,
             title: "Spain",
             content: markerElement,
         });
