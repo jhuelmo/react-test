@@ -55,6 +55,9 @@ export default function Map() {
         map = new Map(mapRef.current, {
             zoom: 3,
             scrollwheel: false,
+            disableDoubleClickZoom: true,
+            mapTypeControl: false,
+
             center: position,
             mapId: "Test-React-Map",
             mapTypeControlOptions: {
