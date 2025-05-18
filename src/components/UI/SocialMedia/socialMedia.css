@@ -1,6 +1,12 @@
 .social {
     border-radius: 100%;
     padding: 0.5rem;
+    transition: all 300ms ease-in-out;
+    cursor: pointer;
+}
+
+.social:hover {
+    background-color: black;
 }
 
 .social-facebook {
