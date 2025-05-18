@@ -27,7 +27,7 @@ export default function Carousel() {
     useEffect(() => {
         const timer = setInterval(() => {
             setCurrentIndex((prevIndex) => (prevIndex + 1) % totalSlides);
-        }, 3000);
+        }, 5000);
         return () => clearInterval(timer);
     }, [currentIndex]);
 
