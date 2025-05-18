@@ -17,7 +17,7 @@ export function Header() {
                     <CompanyLogo />
                 </div>
             </div>
-            <div className="header-wrapper">
+            <div className="header-container">
                 <Title />
                 <Navigation />
             </div>

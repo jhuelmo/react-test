@@ -1,11 +1,11 @@
 .logo {
-    display: inline-flex;
+    height: 100%;
+    display: flex;
     align-items: center;
-    justify-content: center;
-    max-width: 100%;
     img {
-        display: block;
+        height: 100%;
+        width: auto;
         max-width: 100%;
-        height: auto;
+        object-fit: contain;
     }
 }

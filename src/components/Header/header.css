@@ -1,7 +1,6 @@
 .header {
     position: fixed;
     top: 0;
-    left: 0;
     width: 100%;
     z-index: 1000;
     height: var(--header-height);
@@ -11,7 +10,7 @@
     flex-direction: column;
 }
 
-.header-wrapper {
+.header-container {
     flex: 1;
     width: 100%;
     display: flex;
@@ -20,38 +19,38 @@
     overflow: hidden;
 }
 
-.header-wrapper > div,
-.header-wrapper > nav {
+.header-container > div,
+.header-container > nav {
     flex: 1;
 }
 
 .info-bar {
-    height: 2.3rem;
     display: flex;
+    height: 2.3rem;
+    padding: 0.2rem 10rem;
     background-color: #dddddd;
-    padding: 0.1rem 10rem;
 }
 
 .right-container {
+    height: 100%;
     margin-left: auto;
-    padding: 3px 0;
 }
 
 @media screen and (max-width: 480px) {
-    .header-wrapper {
+    .header-container {
         flex-direction: column;
         padding: 0 2%;
     }
 }
 
 @media screen and (min-width: 480px) and (max-width: 768px) {
-    .header-wrapper {
+    .header-container {
         padding: 0 2%;
     }
 }
 
 @media screen and (min-width: 768px) and (max-width: 1024px) {
-    .header-wrapper {
+    .header-container {
         padding: 0 3%;
     }
 }
