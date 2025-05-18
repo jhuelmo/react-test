@@ -31,8 +31,8 @@ export function Navigation() {
     };
 
     return (
-        <nav>
-            <ul>
+        <nav className="nav">
+            <ul className="nav-menu">
                 {menuItems.map(({ id, label }) => (
                     <NavItem
                         key={id}

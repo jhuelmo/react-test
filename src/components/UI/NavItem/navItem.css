@@ -24,6 +24,7 @@
     letter-spacing: -0.8px;
     cursor: pointer;
     padding: 10px;
+    text-align: center;
 }
 
 .nav-icon {
@@ -35,4 +36,10 @@
     opacity: 0;
     transition: all 100ms ease-in;
     pointer-events: none;
+}
+
+@media screen and (max-width: 480px) {
+    .nav-link {
+        font-size: 0.9rem;
+    }
 }

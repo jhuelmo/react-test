@@ -9,6 +9,10 @@
     margin: 0;
     padding: 0;
 }
+html,
+body {
+    overflow-x: hidden;
+}
 
 ul li {
     list-style: none;
