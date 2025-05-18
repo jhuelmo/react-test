@@ -2,7 +2,7 @@ import { useScroll } from "@/context/scrollContext";
 import { Navigation } from "./Navigation/navigation";
 
 import "./header.css";
-import ComapnyLogo from "../UI/Logo/companyLogo";
+import CompanyLogo from "../UI/Logo/companyLogo";
 import Title from "./Title/title";
 
 export function Header() {
@@ -14,7 +14,7 @@ export function Header() {
         <header ref={headerRef} className="header">
             <div className="info-bar">
                 <div className="right-container">
-                    <ComapnyLogo />
+                    <CompanyLogo />
                 </div>
             </div>
             <div className="header-wrapper">

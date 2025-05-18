@@ -1,8 +1,11 @@
-.logo img {
-    height: 100%;
-    width: 100%;
-}
 .logo {
-    display: block;
-    height: 100%;
+    display: inline-flex;
+    align-items: center;
+    justify-content: center;
+    max-width: 100%;
+    img {
+        display: block;
+        max-width: 100%;
+        height: auto;
+    }
 }

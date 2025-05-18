@@ -1,5 +1,5 @@
 import Location from "../UI/Icons/location";
-import ComapnyLogo from "../UI/Logo/companyLogo";
+import CompanyLogo from "../UI/Logo/companyLogo";
 import SocialMedia from "../UI/SocialMedia/socialMedia";
 import "./footer.css";
 
@@ -9,7 +9,7 @@ export default function Footer() {
         <footer className="footer">
             <div className="footer-wrapper">
                 <div className="footer-logo-wrapper">
-                    <ComapnyLogo />
+                    <CompanyLogo />
                 </div>
                 <div className="social-media-wrapper">
                     <SocialMedia name={"facebook"} size={22} />
