@@ -1,4 +1,4 @@
-import { useState, type AnchorHTMLAttributes } from "react";
+import { type AnchorHTMLAttributes } from "react";
 import Location from "@/components/UI/Icons/location";
 
 import "./navItem.css";
