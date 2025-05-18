@@ -19,12 +19,15 @@
     justify-content: center;
     gap: 12px;
     margin-top: 1rem;
-}
-
-.line {
-    width: 48px;
-    height: 1px;
-    background-color: #777777;
+    ::before,
+    ::after {
+        display: inline-block;
+        content: "";
+        border-top: 1px solid #000000;
+        width: 4rem;
+        margin: 0 1rem;
+        transform: translateY(-0.3rem);
+    }
 }
 
 .subtitle-text {
@@ -32,4 +35,27 @@
     font-size: 1.3rem;
     font-weight: 500;
     color: #000000;
+}
+
+@media only screen and (max-width: 480px) {
+    .title-wrapper {
+        padding-bottom: 0;
+    }
+
+    .title-logo-wrapper {
+        height: 3rem;
+    }
+
+    .subtitle-wrapper {
+        margin-top: 0.5rem;
+        ::before,
+        ::after {
+            width: 2rem;
+            margin: 0 0.3rem;
+        }
+    }
+
+    .subtitle-text {
+        font-size: 0.9rem;
+    }
 }

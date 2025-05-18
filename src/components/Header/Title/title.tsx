@@ -9,9 +9,7 @@ export default function Title() {
             </div>
 
             <div className="subtitle-wrapper">
-                <div className="line"></div>
                 <p className="subtitle-text">By EUROSTARS HOTELS</p>
-                <div className="line"></div>
             </div>
         </div>
     );
