@@ -15,3 +15,20 @@
     align-items: center;
     gap: 1rem;
 }
+
+@media screen and (max-width: 480px) {
+    .footer {
+        height: auto;
+    }
+    .footer-wrapper {
+        display: block;
+        text-align: center;
+    }
+    .footer-logo-wrapper {
+        padding: 0 20%;
+    }
+    .social-media-wrapper {
+        justify-content: center;
+        margin-top: 1.2rem;
+    }
+}

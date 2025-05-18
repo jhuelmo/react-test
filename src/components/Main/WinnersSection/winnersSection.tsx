@@ -15,7 +15,7 @@ export default function WinnersSection() {
                 <h2 className="winners-title">
                     LOS GANADORES DE LAS ESTANCIAS EN HOTELES EUROSTARS
                 </h2>
-                <div className="winners-card-container">
+                <div className="winners-post-container">
                     {data.posts.map((post) => (
                         <>
                             <WinnersPost post={post} />

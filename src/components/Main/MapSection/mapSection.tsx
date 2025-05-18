@@ -23,8 +23,8 @@ export default function MapSection() {
                     de las vanguardias.
                 </p>
                 <p>
-                    Ina cadena joven nacida en 2005 con más de
-                    <b> 70 hoteles en 40 destinos de todo el mundo.</b>
+                    Una cadena joven nacida en 2005 con más de
+                    <b> 70 hoteles en 40 destinos </b>de todo el mundo.
                 </p>
                 <p>
                     En eurostars buscamos que nuestros clientes vivan toda una

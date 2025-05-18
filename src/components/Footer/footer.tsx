@@ -8,7 +8,9 @@ export default function Footer() {
     return (
         <footer className="footer">
             <div className="footer-wrapper">
-                <ComapnyLogo />
+                <div className="footer-logo-wrapper">
+                    <ComapnyLogo />
+                </div>
                 <div className="social-media-wrapper">
                     <SocialMedia name={"facebook"} size={22} />
                     <SocialMedia name={"youtube"} size={22} />
