@@ -1,0 +1,35 @@
+.title-wrapper {
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    padding: 1rem 0;
+}
+
+.title-logo-wrapper {
+    text-align: center;
+    height: 60%;
+}
+.title-logo {
+    height: 100%;
+}
+
+.subtitle-wrapper {
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    gap: 12px;
+    margin-top: 1rem;
+}
+
+.line {
+    width: 48px;
+    height: 1px;
+    background-color: #777777;
+}
+
+.subtitle-text {
+    font-family: Georgia, "Times New Roman", Times, serif;
+    font-size: 1.3rem;
+    font-weight: 500;
+    color: #000000;
+}

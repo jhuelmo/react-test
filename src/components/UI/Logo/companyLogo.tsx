@@ -1,7 +1,7 @@
-import reactLogo from "@/assets/logo.png";
-import "./logo.css";
+import reactLogo from "@/assets/company-logo.png";
+import "./companyLogo.css";
 
-export default function Logo() {
+export default function ComapnyLogo() {
     //TODO: Add size prop
     return (
         <a className="logo">
