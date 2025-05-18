@@ -22,9 +22,9 @@ export default function Card({ firstImage, secondImage, winners }: CardProps) {
                 <div className="card-info">
                     <h4 className="card-info-title">FELICIDADES!</h4>
                     <span className="card-info-description">
-                        <p>Habéis ganado una estancia para</p>
                         <p>
-                            <u>Eurostars International Place 4*</u>
+                            Habéis ganado una estancia para
+                            <u> Eurostars International Place 4*</u>
                         </p>
                     </span>
                     <ul className="card-info-list">

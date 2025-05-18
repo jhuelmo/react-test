@@ -19,18 +19,28 @@ export default function WinnersPost({ post }: WinnersPost) {
     return (
         <div className="winners-post">
             <div className="winners-post-title">
-                <Diamond color="var(--accent-color)" />
-                <h3>{post.title}</h3>
-                {post.date && (
+                {post.date ? (
                     <>
-                        <div className="winners-post-title-separator"></div>
-                        <div className="winners-card-date">
-                            <span>{post.date.startDate}</span>
-                            <span>{post.date.endDate}</span>
-                        </div>
+                        <Diamond color="var(--accent-color)" />
+                        <h3>{post.title}</h3>
+
+                        <>
+                            <div className="winners-post-title-separator"></div>
+                            <div className="winners-card-date">
+                                <span>{post.date.startDate}</span>
+                                <span>{post.date.endDate}</span>
+                            </div>
+                        </>
+
+                        <Diamond color="var(--accent-color)" />
+                    </>
+                ) : (
+                    <>
+                        <div className="arrow left stretch" />
+                        <h3 className="no-date">{post.title}</h3>
+                        <div className="arrow right stretch" />
                     </>
                 )}
-                <Diamond color="var(--accent-color)" />
             </div>
             <Card
                 winners={post.winners}

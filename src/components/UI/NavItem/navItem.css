@@ -43,3 +43,11 @@
         font-size: 0.9rem;
     }
 }
+
+@media screen and (min-width: 480px) and (max-width: 1024px) {
+    .nav-link {
+        font-size: 0.9rem;
+        padding-left: 0;
+        padding-right: 0;
+    }
+}

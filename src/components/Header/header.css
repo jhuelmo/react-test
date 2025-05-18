@@ -15,7 +15,7 @@
     flex: 1;
     width: 100%;
     display: flex;
-    padding: 0 10%;
+    padding: 0 8%;
     box-sizing: border-box;
     overflow: hidden;
 }
@@ -37,9 +37,27 @@
     padding: 3px 0;
 }
 
-@media only screen and (max-width: 480px) {
+@media screen and (max-width: 480px) {
     .header-wrapper {
         flex-direction: column;
         padding: 0 2%;
+    }
+}
+
+@media screen and (min-width: 480px) and (max-width: 768px) {
+    .header-wrapper {
+        padding: 0 2%;
+    }
+}
+
+@media screen and (min-width: 768px) and (max-width: 1024px) {
+    .header-wrapper {
+        padding: 0 3%;
+    }
+}
+
+@media screen and (max-width: 1024px) {
+    .info-bar {
+        padding: 0.1rem 0.5rem;
     }
 }

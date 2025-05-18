@@ -16,6 +16,9 @@
         font-size: 3rem;
         text-transform: uppercase;
     }
+    .no-date {
+        color: var(--contrast-color);
+    }
 }
 .winners-post-title-separator {
     width: 2px;
@@ -28,6 +31,24 @@
     display: flex;
     flex-direction: column;
     line-height: 1rem;
+}
+
+.arrow {
+    --border-size: 1rem;
+    width: 0;
+    height: 0;
+    border-top: 0.3rem solid transparent;
+    border-bottom: 0.3rem solid transparent;
+
+    &.left {
+        border-right: var(--border-size) solid var(--accent-color);
+    }
+    &.right {
+        border-left: var(--border-size) solid var(--accent-color);
+    }
+    &.stretch {
+        --border-size: 2rem;
+    }
 }
 
 @media screen and (max-width: 480px) {

@@ -76,7 +76,6 @@
     }
     .card-image-container {
         flex-direction: column;
-        width: 100%;
     }
     .card-image-wrapper {
         width: 100%;
@@ -91,5 +90,17 @@
     }
     .card-info-title {
         font-size: 1.6rem;
+    }
+}
+@media screen and (max-width: 1024px) {
+    .card-container {
+        flex-direction: column;
+    }
+    .card-image-container {
+        width: 100%;
+    }
+    .card-info {
+        width: auto;
+        text-align: center;
     }
 }
