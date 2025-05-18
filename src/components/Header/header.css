@@ -23,3 +23,15 @@
 .header-wrapper > nav {
     flex: 1;
 }
+
+.info-bar {
+    height: 2.3rem;
+    display: flex;
+    background-color: #dddddd;
+    padding: 0.1rem 10rem;
+}
+
+.right-container {
+    margin-left: auto;
+    padding: 3px 0;
+}

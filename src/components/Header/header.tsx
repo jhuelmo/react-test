@@ -1,8 +1,8 @@
 import { useScroll } from "@/context/scrollContext";
-import { InfoBar } from "./InfoBar/infobar";
 import { Navigation } from "./Navigation/navigation";
 
 import "./header.css";
+import Logo from "../UI/Logo/logo";
 
 export function Header() {
     //TODO: Responsive header
@@ -11,7 +11,11 @@ export function Header() {
 
     return (
         <header ref={headerRef} className="header">
-            <InfoBar />
+            <div className="info-bar">
+                <div className="right-container">
+                    <Logo />
+                </div>
+            </div>
             <div className="header-wrapper">
                 <div>
                     <h1>EUROPE CITY TOUR</h1>
