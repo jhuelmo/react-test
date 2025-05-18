@@ -7,7 +7,7 @@ type LocationProps = {
 };
 
 const Location: React.FC<LocationProps> = ({
-    size = 16,
+    size = "1rem",
     color = "currentColor",
     className,
 }) => {
