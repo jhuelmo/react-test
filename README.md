@@ -21,6 +21,11 @@ Step by step on how to install and setup the project locally
 ```
 
 ```bash
+  #Generate a .env using the .env.template and add a GoogleMaps api key
+  VITE_GOOGLE_MAPS_API_KEY="YOUR_API_KEY"
+```
+
+```bash
   #Run the server
   npm run dev
 ```
@@ -28,6 +33,12 @@ After the server is running, the project will be aviable in the following route:
 👉 http://localhost:5173/
 
 ![image](https://github.com/user-attachments/assets/8628dcd4-21e6-4dfc-8cc2-dbfb57d5f14c)
+
+### !!CAUTION!!
+If the api key through .env file is not working, hardcode it in the file mapUtils.ts
+```bash
+   const mapsURL = `https://maps.googleapis.com/maps/api/js?key=YOUR_API_KEY_HERE`;
+```
 
 Thanks for everything! ☺️
 
@@ -50,8 +61,8 @@ Pasos para instalar y configurar el proyecto localmente:
 ```
 
 ```bash
-  # Instalar dependencias
-  npm i
+  #Generar un archivo .env utilizando .env.template y añadir una api key de GoogleMaps
+  VITE_GOOGLE_MAPS_API_KEY="YOUR_API_KEY"
 ```
 
 ```bash
@@ -59,9 +70,16 @@ Pasos para instalar y configurar el proyecto localmente:
   npm run dev
 ```
 
+
 Una vez que el servidor esté ejecutado, el proyecto estará disponible en la ruta:
 👉 http://localhost:5173/
 
 ![image](https://github.com/user-attachments/assets/8628dcd4-21e6-4dfc-8cc2-dbfb57d5f14c)
+
+### !!CUIDADO!!
+Si la api key del .env no funciona, introducirla a mano en el archivo mapUtils.ts
+```bash
+   const mapsURL = `https://maps.googleapis.com/maps/api/js?key=TU_API_KEY_AQUI`;
+```
 
 Gracias por todo! ☺️
