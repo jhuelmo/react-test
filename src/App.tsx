@@ -1,6 +1,6 @@
 import "./App.css";
 import Header from "@/components/Header/header";
-import Main from "@/components/Main/main";
+import MainLayout from "@/components/Main/mainLayout";
 import Footer from "@/components/Footer/footer";
 
 import AppProviders from "@/context/appProviders";
@@ -10,7 +10,7 @@ function App() {
         <>
             <AppProviders>
                 <Header />
-                <Main />
+                <MainLayout />
                 <Footer />
             </AppProviders>
         </>

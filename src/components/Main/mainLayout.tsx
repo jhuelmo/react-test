@@ -1,13 +1,10 @@
-import MapSection from "./MapSection/mapSection";
-
-import "./main.css";
-import WinnersSection from "./WinnersSection/winnersSection";
-import Section from "../UI/Section/section";
 import Carousel from "../UI/Carousel/carousel";
+import MapSection from "./MapSection/mapSection";
+import WinnersSection from "./WinnersSection/winnersSection";
 
-//TODO: Create googleMap component
-//TODO: Create map
-export function Main() {
+import "./mainLayout.css";
+
+export function MainLayout() {
     return (
         <main className="main-container">
             <Carousel />
@@ -17,4 +14,4 @@ export function Main() {
     );
 }
 
-export default Main;
+export default MainLayout;
