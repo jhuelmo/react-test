@@ -7,7 +7,7 @@ import MapLoader from "@/components/UI/Map/mapLoader";
 export default function MapSection() {
     const { section2Ref } = useScroll();
     return (
-        <Section ref={section2Ref}>
+        <Section id="eurostar" ref={section2Ref}>
             <div className="map-section-container">
                 <h3>
                     Eurostars Hotels es una cadena de hoteles con alma española

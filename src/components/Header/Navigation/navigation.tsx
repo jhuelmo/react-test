@@ -5,9 +5,9 @@ import { useScroll } from "@/context/scrollContext";
 
 //Temp list for demo purpose
 const menuItems = [
-    { id: "section1", label: "PARTICIPA" },
-    { id: "section2", label: "EUROSTAR HOTELS" },
-    { id: "section3", label: "LOS GANADORES" },
+    { id: "participa", label: "PARTICIPA" },
+    { id: "eurostar", label: "EUROSTAR HOTELS" },
+    { id: "ganadores", label: "LOS GANADORES" },
 ];
 
 //TODO: add href to items and scroll to section
@@ -17,9 +17,9 @@ export function Navigation() {
     const [activeId, setActiveId] = useState("");
 
     const refMap: Record<string, React.RefObject<HTMLElement | null>> = {
-        section1: section1Ref,
-        section2: section2Ref,
-        section3: section3Ref,
+        participa: section1Ref,
+        eurostar: section2Ref,
+        ganadores: section3Ref,
     };
 
     const handleClick = (id: string) => {
@@ -37,6 +37,7 @@ export function Navigation() {
                     <NavItem
                         key={id}
                         label={label}
+                        href={`#${id}`}
                         isActive={activeId === id}
                         onClick={() => handleClick(id)}
                     />

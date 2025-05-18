@@ -8,7 +8,7 @@ interface NavItemProps extends AnchorHTMLAttributes<HTMLAnchorElement> {
     isActive: boolean;
 }
 
-function NavItem({ label, isActive, onClick }: NavItemProps) {
+function NavItem({ label, isActive, onClick, href }: NavItemProps) {
     return (
         <li
             className={`nav-item 
@@ -16,7 +16,7 @@ function NavItem({ label, isActive, onClick }: NavItemProps) {
         >
             <Location className="nav-icon" size="32px" />
 
-            <a className="nav-link" onClick={onClick}>
+            <a href={href} className="nav-link" onClick={onClick}>
                 {label}
             </a>
         </li>

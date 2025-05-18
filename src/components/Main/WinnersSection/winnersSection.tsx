@@ -10,7 +10,7 @@ export default function WinnersSection() {
     const { section3Ref } = useScroll();
 
     return (
-        <Section ref={section3Ref}>
+        <Section id="ganadores" ref={section3Ref}>
             <div className="winners-wrapper">
                 <h2 className="winners-title">
                     LOS GANADORES DE LAS ESTANCIAS EN HOTELES EUROSTARS
