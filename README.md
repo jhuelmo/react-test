@@ -59,9 +59,9 @@ Pasos para instalar y configurar el proyecto localmente:
   npm run dev
 ```
 
-Una vez que el servidor esté corriendo, el proyecto estará disponible en la ruta:
+Una vez que el servidor esté ejecutado, el proyecto estará disponible en la ruta:
 👉 http://localhost:5173/
 
 ![image](https://github.com/user-attachments/assets/8628dcd4-21e6-4dfc-8cc2-dbfb57d5f14c)
 
-¡Gracias por todo! ☺️
+Gracias por todo! ☺️
