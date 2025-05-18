@@ -1,4 +1,4 @@
-import { useCallback, useState } from "react";
+import { useCallback, useEffect, useState } from "react";
 import angli from "@/assets/slider/angli.jpg";
 import room from "@/assets/slider/room.jpg";
 import tower from "@/assets/slider/tower.jpg";
@@ -12,36 +12,44 @@ const slides = [
     { id: 3, content: tower },
 ];
 
-//TODO: Add automatic slider rotation & tablet controls
+//TODO: Add tablet controls
 //TODO: Responsive
 
 export default function Carousel() {
     const [currentIndex, setCurrentIndex] = useState(0);
+    let totalSlides = slides.length;
 
     const goToSlide = useCallback((index: number) => {
         setCurrentIndex(index);
     }, []);
 
+    //LoopEffect
+    useEffect(() => {
+        const timer = setInterval(() => {
+            setCurrentIndex((prevIndex) => (prevIndex + 1) % totalSlides);
+        }, 3000);
+        return () => clearInterval(timer);
+    }, [currentIndex]);
+
     return (
         <div className="carousel" aria-label="Image carousel">
-            <ul
-                className="carousel-slides"
-                style={{ transform: `translateX(-${currentIndex * 100}%)` }}
-            >
+            <ul className="carousel-slides">
                 {slides.map((slide, index) => (
-                    <li key={slide.id} className="carousel-slide">
-                        <div className="carousel-image-container">
-                            <img
-                                src={slide.content}
-                                className="carousel-image"
-                            />
-                        </div>
+                    <li
+                        key={slide.id}
+                        className={`carousel-slide 
+                    ${index === currentIndex && "active"}
+                    ${index === currentIndex + 1 && "next"}
+                    ${index === currentIndex - 1 && "prev"}
+                    ${index === currentIndex + 1 && "next"}
+
+                    `}
+                    >
+                        <img src={slide.content} className="carousel-image" />
                     </li>
                 ))}
             </ul>
-            {/* width: 0.5rem;
-    height: 0.5rem;
-    background-color: rgba(39, 38, 38, 0.678); */}
+
             {/* Carousel indicators */}
             <div className="carousel-indicator-contrainer">
                 {slides.map((_, index) => (
