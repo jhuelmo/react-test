@@ -10,8 +10,8 @@ interface WinnersPost {
             endDate: string;
         };
         winners: string[];
-        firstImage: string;
-        secondImage: string;
+        firstImage: { url: string; alt: string };
+        secondImage: { url: string; alt: string };
     };
 }
 

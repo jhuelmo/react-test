@@ -13,8 +13,15 @@
                 "Laura Coronas",
                 "Alexandra Tresaco"
             ],
-            "firstImage": "/assets/suite.jpg",
-            "secondImage": "/assets/roma.jpg"
+
+            "firstImage": {
+                "url": "/assets/suite.jpg",
+                "alt": "Suite Eurostar Hotel"
+            },
+            "secondImage": {
+                "url": "/assets/roma.jpg",
+                "alt": "Roma"
+            }
         },
         {
             "title": "Roma",
@@ -25,8 +32,14 @@
                 "Laura Coronas",
                 "Alexandra Tresaco"
             ],
-            "firstImage": "/assets/suite.jpg",
-            "secondImage": "/assets/statue.jpg"
+            "firstImage": {
+                "url": "/assets/suite.jpg",
+                "alt": "Suite Eurostar Hotel"
+            },
+            "secondImage": {
+                "url": "/assets/statue.jpg",
+                "alt": "Estatua Roma"
+            }
         }
     ]
 }

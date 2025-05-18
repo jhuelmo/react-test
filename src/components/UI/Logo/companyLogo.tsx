@@ -4,8 +4,8 @@ import "./companyLogo.css";
 export default function CompanyLogo() {
     //TODO: Add size prop
     return (
-        <a className="logo">
-            <img src={reactLogo} />
-        </a>
+        <div className="logo">
+            <img src={reactLogo} alt="Eurostars Hotel" />
+        </div>
     );
 }

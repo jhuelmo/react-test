@@ -7,9 +7,9 @@ import Diamond from "../Diamond/diamond";
 
 //List for demo purpose
 const slides = [
-    { id: 1, content: room },
-    { id: 2, content: angli },
-    { id: 3, content: tower },
+    { id: 1, content: room, alt: "Habitacion Hotel Eurostar" },
+    { id: 2, content: angli, alt: "Angli room Hotel Eurostar" },
+    { id: 3, content: tower, alt: "Tprre Hotel Eurostar" },
 ];
 
 //TODO: Add tablet controls
@@ -45,7 +45,11 @@ export default function Carousel() {
 
                     `}
                     >
-                        <img src={slide.content} className="carousel-image" />
+                        <img
+                            src={slide.content}
+                            className="carousel-image"
+                            alt=""
+                        />
                     </li>
                 ))}
             </ul>

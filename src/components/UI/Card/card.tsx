@@ -1,8 +1,14 @@
 import "./card.css";
 
 interface CardProps {
-    firstImage: string;
-    secondImage: string;
+    firstImage: {
+        url: string;
+        alt: string;
+    };
+    secondImage: {
+        url: string;
+        alt: string;
+    };
     winners: string[];
 }
 //TODO: Load hotel name dinamically?
@@ -12,10 +18,18 @@ export default function Card({ firstImage, secondImage, winners }: CardProps) {
             <div className="card-container">
                 <div className="card-image-container">
                     <div className="card-image-wrapper">
-                        <img className="card-image" src={firstImage} />
+                        <img
+                            className="card-image"
+                            src={firstImage.url}
+                            alt={firstImage.alt}
+                        />
                     </div>
                     <div className="card-image-wrapper">
-                        <img className="card-image" src={secondImage} />
+                        <img
+                            className="card-image"
+                            src={secondImage.url}
+                            alt={secondImage.alt}
+                        />
                     </div>
                 </div>
 

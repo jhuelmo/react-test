@@ -5,7 +5,7 @@ export default function Title() {
     return (
         <div className="title-wrapper">
             <div className="title-logo-wrapper">
-                <img className="title-logo" src={logo} />
+                <img className="title-logo" src={logo} alt="Europe City Tour" />
             </div>
 
             <div className="subtitle-wrapper">
