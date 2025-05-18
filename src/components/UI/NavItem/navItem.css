@@ -1,6 +1,21 @@
 .nav-item {
     font-weight: 500;
     position: relative;
+
+    &.active {
+        .nav-link {
+            color: var(--accent-color);
+        }
+    }
+}
+.nav-item:hover {
+    .nav-link {
+        color: var(--accent-color);
+    }
+    .nav-icon {
+        opacity: 1;
+        transform: translate(-50%, -1.2rem);
+    }
 }
 
 .nav-link {
@@ -11,16 +26,13 @@
     padding: 10px;
 }
 
-.nav-link:hover,
-.nav-link.active {
-    color: var(--accent-color);
-}
-
 .nav-icon {
     color: var(--accent-color);
     fill: currentColor;
     position: absolute;
-    top: -24px;
     left: 50%;
     transform: translateX(-50%);
+    opacity: 0;
+    transition: all 100ms ease-in;
+    pointer-events: none;
 }
