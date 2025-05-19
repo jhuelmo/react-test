@@ -38,6 +38,8 @@ export default function ParticipateSection() {
                             <div className="input-container">
                                 <input placeholder="placeholder" />
                                 <input placeholder="placeholder" />
+                                <input placeholder="placeholder" />
+                                <button>Enviar</button>
                             </div>
                         </div>
 
