@@ -37,6 +37,95 @@
     height: auto;
     line-height: 0.8;
 }
+.participate-card-wrapper {
+    position: relative;
+    margin: 0 8rem;
+    padding: 1.5rem;
+}
+.participate-card {
+    height: 45vh;
+    width: 40rem;
+    display: flex;
+    flex-direction: column;
+    justify-content: space-between;
+    background-color: white;
+    padding: 2rem 5rem;
+    text-align: center;
+    span {
+        font-size: 1.3rem;
+    }
+}
 
-.participate-bot-container {
+.quiz-container {
+    position: absolute;
+    background-color: white;
+    padding: 1rem;
+    top: 25%;
+    left: 40%;
+    box-shadow: 0 0px 5px rgba(0, 0, 0, 0.336);
+    width: 60%;
+    height: 55%;
+    transform: rotateZ(3deg);
+    z-index: 100;
+}
+.quiz-inner-container {
+    display: flex;
+    flex-direction: column;
+    justify-content: space-around;
+    align-items: center;
+    border: 2px solid var(--contrast-color);
+    height: 100%;
+    box-sizing: border-box;
+}
+
+.quiz-answer-container {
+    width: 100%;
+    display: flex;
+    flex-direction: row;
+    justify-content: space-around;
+}
+
+.quiz-answer {
+    display: flex;
+    flex-direction: row;
+    align-items: center;
+    gap: 0.5rem;
+    font-size: 1.5rem;
+}
+.quiz-answer-button {
+    border: none;
+    background-color: transparent;
+    color: var(--accent-color);
+    cursor: pointer;
+    > svg {
+        transition: 300ms all ease-in-out;
+    }
+    :hover {
+        color: red;
+    }
+}
+
+.card-photo-container {
+    position: absolute;
+    background-color: white;
+    padding: 1.2rem;
+    padding-bottom: 3rem;
+    top: 23%;
+    left: -1%;
+    box-shadow: 0 0px 5px rgba(0, 0, 0, 0.336);
+    width: 43%;
+    height: 53%;
+    transform: rotateZ(-6deg);
+    z-index: 90;
+    aspect-ratio: 1 / 1;
+}
+.card-photo-wrapper {
+    width: 100%;
+    height: 100%;
+    img {
+        width: 100%;
+        height: 100%;
+        display: block;
+        object-fit: cover;
+    }
 }
