@@ -6,6 +6,7 @@ import quizPhoto from "@/assets/roma.jpg";
 
 import "./participateSection.css";
 import Location from "@/components/UI/Icons/location";
+import SocialMedia from "@/components/UI/SocialMedia/socialMedia";
 
 export default function ParticipateSection() {
     const { section1Ref } = useScroll();
@@ -30,16 +31,63 @@ export default function ParticipateSection() {
                     </div>
                     <form className="participate-card-wrapper">
                         <div className="participate-card">
-                            <span>
+                            <span className="participate-card-text">
                                 Responde correctamente y gana una de las cinco
                                 estancias en hoteles Eurostars que sorteamos en
                                 nuestro destino secreto.
                             </span>
-                            <div className="input-container">
-                                <input placeholder="placeholder" />
-                                <input placeholder="placeholder" />
-                                <input placeholder="placeholder" />
-                                <button>Enviar</button>
+                            <div className="participate-card-bottom">
+                                <div className="participate-input-container">
+                                    <input placeholder="Nombre" />
+                                    <input placeholder="Apellidos" />
+                                    <input placeholder="Email" />
+                                    <button>Enviar</button>
+                                </div>
+                                <div className="participate-checkbox-container">
+                                    <input type="checkbox" />
+                                    <label>
+                                        Acepto las Bases del programa, la
+                                        Política de privacidad y Proteción de
+                                        datos
+                                    </label>
+                                </div>
+                                <div className="participate-socialMedia-wrapper">
+                                    <div className="participate-socialMedia-container">
+                                        <span>Te gusta? Compártelo</span>
+                                        <SocialMedia
+                                            size={18}
+                                            onlyIcon
+                                            name={"facebook"}
+                                        />
+                                        <div className="participate-socialMedia-separator" />
+                                        <SocialMedia
+                                            size={18}
+                                            onlyIcon
+                                            name={"twitter"}
+                                        />
+                                        <div className="participate-socialMedia-separator" />
+
+                                        <SocialMedia
+                                            size={18}
+                                            onlyIcon
+                                            name={"youtube"}
+                                        />
+                                        <div className="participate-socialMedia-separator" />
+
+                                        <SocialMedia
+                                            size={18}
+                                            onlyIcon
+                                            name={"instagram"}
+                                        />
+                                        <div className="participate-socialMedia-separator" />
+
+                                        <SocialMedia
+                                            size={18}
+                                            onlyIcon
+                                            name={"pinterest"}
+                                        />
+                                    </div>
+                                </div>
                             </div>
                         </div>
 
@@ -79,7 +127,14 @@ export default function ParticipateSection() {
                         </div>
                     </form>
                 </div>
-                <div className="participate-bot-container">Bottom</div>
+                <div className="participate-bot-container">
+                    <div className="participate-bot-separator"></div>
+                    <h2>EUROSTARS HOTELS</h2>
+                    <p>
+                        LO IMPORTANTE NO ES QUE HOTEL ELIGES, SINO POR QUÉ LO
+                        ELIGES
+                    </p>
+                </div>
             </div>
         </Section>
     );

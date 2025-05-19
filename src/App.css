@@ -34,7 +34,7 @@ ul li {
     -moz-osx-font-smoothing: grayscale;
 
     /* Variables */
-    --header-height: 12rem;
+    --header-height: 11rem;
 
     --accent-color: #41bbc6;
     --contrast-color: #fbba04;
